@@ -1,27 +1,24 @@
-#container {
-  text-align: center;
+.main-container-wrapper {
+  width: 100%;
+  height: 100%;
+  --background : grey;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .main-container {
+    width: 100%;
+    height: 100%;
+    background: #3a7be0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+    .children {
+      width: 100px;
+      height: 100px;
+      background: red;
+      border: 1px solid black;
+    }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  }
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }
