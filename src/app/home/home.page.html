@@ -1,12 +1,21 @@
 <ion-content class="main-container-wrapper ion-no-padding">
 
-  <ion-grid class="main-container ion-no-padding">
+  <div class="main-container ion-no-padding">
 
-    <ion-row class="profile-icon-container ion-no-padding">
-      <ion-icon (click)="onProfileIconClicked()"  name="person-circle"></ion-icon>
-    </ion-row>
+    <div class="profile-icon-container">
+      <ion-icon (click)="onProfileIconClicked()" name="person-circle"></ion-icon>
+    </div>
 
+    <div class="phrase-of-the-day-container">
+      <app-phrase-component></app-phrase-component>
+    </div>
 
-  </ion-grid>
+    <div class="last-phrases-container">
+      <app-phrase-component></app-phrase-component>
+      <app-phrase-component></app-phrase-component>
+      <app-phrase-component></app-phrase-component>
+    </div>
+
+  </div>
 
 </ion-content>

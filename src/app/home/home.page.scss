@@ -7,13 +7,15 @@
     height: 100%;
     background: var(--ion-color-medium);
     display: flex;
-    align-items: flex-start; // Vertical
-    justify-content: center; //Horizontal
+    flex-direction: column;
+    align-items: center; // Vertical
+    justify-content: flex-start; //Horizontal
     padding: 0 22px;
 
     .profile-icon-container {
       width: 100%;
-      height: 75px;
+      height: 10%;
+      border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -23,6 +25,25 @@
         font-size: 45px;
       }
 
+    }
+
+    .phrase-of-the-day-container {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid red;
+    }
+
+    .last-phrases-container {
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      border: 1px solid red;
     }
 
   }
