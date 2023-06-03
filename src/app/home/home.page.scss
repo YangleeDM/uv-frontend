@@ -8,16 +8,8 @@
     height: 100%;
     background: #3a7be0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    .children {
-      width: 100px;
-      height: 100px;
-      background: red;
-      border: 1px solid black;
-    }
+    align-items: center; // Vertical
+    justify-content: center; //Horizontal
 
   }
 
