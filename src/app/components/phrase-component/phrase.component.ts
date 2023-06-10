@@ -9,8 +9,8 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PhraseComponent implements OnInit {
 
   @Input() phraseItem : PhraseInfo = {
-    author : '123',
-    phrase : '123'
+    author : 'Jorge Arturo',
+    phrase : 'Arriba las chivas'
   }
 
   constructor() { }

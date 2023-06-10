@@ -15,7 +15,6 @@
     .profile-icon-container {
       width: 100%;
       height: 10%;
-      border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -29,11 +28,24 @@
 
     .phrase-of-the-day-container {
       width: 100%;
-      height: 20%;
+      height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid red;
+      flex-direction: column;
+
+      .phrase-of-the-day-title-container {
+        width: 300px;
+        height: 20px;
+        margin-bottom: 15px;
+
+        ion-label {
+          font-weight: bold;
+          color: var(--ion-color-tertiary);
+        }
+
+      }
+
     }
 
     .last-phrases-container {
@@ -43,7 +55,18 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      border: 1px solid red;
+
+      .last-phrase-title-container {
+        width: 300px;
+        height: 20px;
+
+        ion-label {
+          font-weight: bold;
+          color: var(--ion-color-tertiary);
+        }
+
+      }
+
     }
 
   }
