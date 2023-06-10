@@ -1,0 +1,53 @@
+.profile-page-main-wrapper {
+  width: 100%;
+  height: 100%;
+
+  .profile-page-main-container {
+    width: 100%;
+    height: 100%;
+
+    .profile-page-content {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      background: grey;
+
+      .profile-page-toolbar-container {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #5d58e0;
+      }
+
+      .profile-page-phrase-component-container {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #5d58e0;
+      }
+
+      .profile-page-comments-container {
+        width: 100%;
+        flex-grow: 1;
+        border: 1px solid #5d58e0;
+      }
+
+    }
+
+    .profile-page-action-container {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #5d58e0;
+
+      ion-button {
+        width: 250px;
+      }
+
+    }
+
+
+  }
+
+}
