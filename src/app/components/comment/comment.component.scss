@@ -1,0 +1,41 @@
+.comment-item-main-wrapper {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ff5b71;
+  display: flex;
+
+  .comment-item-profile-icon-container {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-icon {
+      font-size: 24px;
+      color: var(--ion-color-primary);
+    }
+
+  }
+
+  .comment-item-content-container {
+    width: 90%;
+    height: 100%;
+    border: 1px solid blue;
+
+    .comment-author-container {
+      width: 100%;
+      height: 40%;
+      background: rebeccapurple;
+    }
+
+    .comment-container {
+      width: 100%;
+      height: 60%;
+      background: #ff5b71;
+    }
+
+
+  }
+
+}
