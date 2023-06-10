@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Router} from "@angular/router";
+import {PhraseInfo} from "../components/phrase-component/phrase.component";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,11 @@ import {Router} from "@angular/router";
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  public phraseOfTheDay : PhraseInfo = {
+    phrase : 'Tu actitud, no tu aptitud, determinará tu altitud',
+    author : 'Yanglee Madrigal'
+  }
 
   constructor(
     private router : Router

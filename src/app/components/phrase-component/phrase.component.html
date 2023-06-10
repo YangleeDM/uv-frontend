@@ -1,3 +1,12 @@
-<ion-grid class="phrase-main-wrapper">
-  Soy el componente de frase!
+<ion-grid class="phrase-main-wrapper ion-no-padding">
+
+  <ion-row class="author-title-container ion-no-padding">
+    <ion-icon name="chatbubbles"></ion-icon>
+    <ion-label>{{phraseItem.author}}</ion-label>
+  </ion-row>
+
+  <ion-row class="phrase-container ion-no-padding">
+    <ion-label>{{'"'}}{{phraseItem.phrase}}{{'"'}}</ion-label>
+  </ion-row>
+
 </ion-grid>
