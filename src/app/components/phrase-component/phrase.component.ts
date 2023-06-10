@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-phrase-component',
@@ -13,9 +13,15 @@ export class PhraseComponent implements OnInit {
     phrase : 'Arriba las chivas'
   }
 
+  @Output() onPhraseClicked : EventEmitter<any> = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit() {}
+
+  public onCardClicked() : void {
+    this.onPhraseClicked.emit(this.phraseItem)
+  }
 
 }
 
