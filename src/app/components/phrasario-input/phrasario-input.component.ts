@@ -12,12 +12,20 @@ export class PhrasarioInputComponent  implements OnInit {
 
   @Output() onInputValueChange = new EventEmitter();
 
+  private timeout : any = null;
+
   constructor() { }
 
   ngOnInit() {}
 
   public onInputChange() {
-    this.onInputValueChange.emit(this.inputValue);
+    if(!this.inputValue) return;
+
+    this.timeout && clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {
+      console.log("Enviando!")
+      this.onInputValueChange.emit(this.inputValue);
+    }, 500)
   }
 
 }

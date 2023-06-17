@@ -6,29 +6,29 @@
 
       <app-phrsario-toolbar [toolbarTitle]="'Perfil'" ></app-phrsario-toolbar>
 
-      <phrasario-input (onInputValueChange)="onNameChange($event)" [placeholder]="'Nombre'"></phrasario-input>
+      <phrasario-input
+        (onInputValueChange)="onNameChange($event, 'name')"
+        [placeholder]="'Nombre'"></phrasario-input>
 
-      <phrasario-input [placeholder]="'Nombre de usuario'"></phrasario-input>
+      <phrasario-input
+        (onInputValueChange)="onNameChange($event, 'userName')"
+        [placeholder]="'Nombre de usuario'"></phrasario-input>
 
-      <phrasario-input [placeholder]="'Correo electrónico'"></phrasario-input>
-
-      <div>
-        <ion-label>{{nameValue}}</ion-label>
-      </div>
-
-      <div>
-        <ion-label>{{userName}}</ion-label>
-      </div>
+      <phrasario-input
+        (onInputValueChange)="onNameChange($event, 'email')"
+        [placeholder]="'Correo electrónico'"></phrasario-input>
 
       <div>
-        <ion-label>{{email}}</ion-label>
+        <ion-label style="color: red">
+          {{nameValue}}
+        </ion-label>
       </div>
 
     </div>
 
     <div class="profile-page-button-container">
 
-      <ion-button>Guardar</ion-button>
+      <ion-button [disabled]="!isFormValid()">Guardar</ion-button>
 
     </div>
 

@@ -8,9 +8,9 @@ import {NavController} from "@ionic/angular";
 })
 export class ProfilePage implements OnInit {
 
-  public nameValue : string = "Default value";
-  public userName : string = "Default username";
-  public email : string = "Default email";
+  public nameValue : string = "";
+  public userName : string = "";
+  public email : string = "";
 
   constructor(
     private navController : NavController
@@ -22,8 +22,28 @@ export class ProfilePage implements OnInit {
     this.navController.pop().then();
   }
 
-  onNameChange(event: any) {
-    this.nameValue = event;
+  onNameChange(inputValue: any, type : 'name' | 'userName' | 'email') {
+
+    switch (type) {
+      case "name":
+        this.nameValue = inputValue;
+        break;
+      case "userName":
+        this.userName = inputValue;
+        break;
+      case "email":
+        this.email = inputValue;
+        break;
+    }
+
+  }
+
+  public isFormValid() : boolean {
+    return (
+      this.nameValue.length > 0 &&
+        this.userName.length > 0 &&
+        this.email.length > 0
+    )
   }
 
 }
