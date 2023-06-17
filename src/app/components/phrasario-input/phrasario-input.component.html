@@ -5,7 +5,9 @@
   </div>
 
   <div class="phrasario-input-container">
-    <ion-input></ion-input>
+    <ion-input
+      (ionChange)="onInputChange()"
+      [(ngModel)]="inputValue"></ion-input>
   </div>
 
 </div>

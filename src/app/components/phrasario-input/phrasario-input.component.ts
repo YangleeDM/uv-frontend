@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'phrasario-input',
@@ -8,9 +8,16 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PhrasarioInputComponent  implements OnInit {
 
   @Input() placeholder : string = "Nombre de usuario";
+  @Input() inputValue : string | null = null;
+
+  @Output() onInputValueChange = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {}
+
+  public onInputChange() {
+    this.onInputValueChange.emit(this.inputValue);
+  }
 
 }

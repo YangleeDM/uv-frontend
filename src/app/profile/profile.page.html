@@ -6,11 +6,23 @@
 
       <app-phrsario-toolbar [toolbarTitle]="'Perfil'" ></app-phrsario-toolbar>
 
-      <phrasario-input [placeholder]="'Nombre'"></phrasario-input>
+      <phrasario-input (onInputValueChange)="onNameChange($event)" [placeholder]="'Nombre'"></phrasario-input>
 
       <phrasario-input [placeholder]="'Nombre de usuario'"></phrasario-input>
 
       <phrasario-input [placeholder]="'Correo electrónico'"></phrasario-input>
+
+      <div>
+        <ion-label>{{nameValue}}</ion-label>
+      </div>
+
+      <div>
+        <ion-label>{{userName}}</ion-label>
+      </div>
+
+      <div>
+        <ion-label>{{email}}</ion-label>
+      </div>
 
     </div>
 
