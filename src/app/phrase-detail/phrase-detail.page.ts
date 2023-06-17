@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-phrase-detail',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhraseDetailPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navController : NavController
+  ) { }
 
   ngOnInit() {
+  }
+
+  public onBackButtonClicked() : void {
+    this.navController.pop().then();
   }
 
 }

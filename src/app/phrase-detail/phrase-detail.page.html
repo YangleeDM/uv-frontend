@@ -1,13 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>phrase-detail</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="profile-page-main-wrapper ion-no-padding">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">phrase-detail</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="profile-page-main-container">
+
+    <div class="profile-page-content">
+
+      <div class="profile-page-toolbar-container">
+
+        <ion-icon (click)="onBackButtonClicked()" name="chevron-back-outline"></ion-icon>
+
+        <ion-label>Detalle</ion-label>
+
+      </div>
+
+      <div class="profile-page-phrase-component-container">
+
+        <app-phrase-component></app-phrase-component>
+
+      </div>
+
+      <div class="profile-page-comments-container">
+
+        <div class="profile-page-comments-title-container">
+          <ion-label>Comentarios</ion-label>
+        </div>
+
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+        <app-comment></app-comment>
+
+
+      </div>
+
+    </div>
+
+    <div class="profile-page-action-container">
+
+      <ion-button>Añadir comentario</ion-button>
+
+    </div>
+
+  </div>
+
 </ion-content>

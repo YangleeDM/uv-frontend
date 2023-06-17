@@ -24,7 +24,7 @@ export class HomePage {
 
   public onCardClicked(cardInformation : any) {
     console.log(cardInformation);
-    this.router.navigate(["profile"]).then();
+    this.router.navigate(["phrase-detail"]).then();
   }
 
 }
