@@ -12,8 +12,8 @@
         <ion-label>Phrasario del día</ion-label>
       </div>
 
-      <app-phrase-component
-
+   <app-phrase-component
+        (onPhraseClicked)="onCardClicked($event)"
         [phraseItem]="phraseOfTheDay"></app-phrase-component>
     </div>
 
@@ -23,9 +23,9 @@
         <ion-label>Últimos destacados</ion-label>
       </div>
 
-      <app-phrase-component></app-phrase-component>
-      <app-phrase-component></app-phrase-component>
-      <app-phrase-component></app-phrase-component>
+      <app-phrase-component (onPhraseClicked)="onCardClicked($event)"></app-phrase-component>
+      <app-phrase-component (onPhraseClicked)="onCardClicked($event)"></app-phrase-component>
+      <app-phrase-component (onPhraseClicked)="onCardClicked($event)"></app-phrase-component>
     </div>
 
   </div>

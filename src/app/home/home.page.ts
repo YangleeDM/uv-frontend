@@ -19,10 +19,12 @@ export class HomePage {
   ) { }
 
   public onProfileIconClicked () {
-    this.router.navigate(["profile"]).then().catch(error => {
-      console.error("Error at onProfileIconClicked", error);
-      alert("Algo salió mal, inténtalo más tarde.");
-    });
+
+  }
+
+  public onCardClicked(cardInformation : any) {
+    console.log(cardInformation);
+    this.router.navigate(["profile"]).then();
   }
 
 }
