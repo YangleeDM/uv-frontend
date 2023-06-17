@@ -19,7 +19,7 @@ export class HomePage {
   ) { }
 
   public onProfileIconClicked () {
-
+    this.router.navigate(["profile"]).then();
   }
 
   public onCardClicked(cardInformation : any) {
