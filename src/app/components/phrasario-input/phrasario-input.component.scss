@@ -1,0 +1,27 @@
+.phrasario-input-main-wrapper {
+  width: 100%;
+  height: 70px;
+  margin-top: 20px;
+
+
+  .phrasario-input-placeholder-container {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 8px;
+
+    ion-label {
+      font-size: 16px;
+      color: var(--ion-color-tertiary);
+    }
+
+  }
+
+  .phrasario-input-container {
+    width: 100%;
+    height: 60%;
+    background: white;
+    border-radius: 10px;
+    padding: 0 12px;
+  }
+
+}
